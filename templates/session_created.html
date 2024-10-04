@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Session Created</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color:pink; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+            color: #fff;
+            text-align: center;
+        }
+
+        .container {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+            animation: fadeIn 1s ease-in;
+        }
+
+        h1, h2, h3 {
+            margin: 0;
+            padding: 0;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+            animation: slideIn 1s ease-out;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            animation-delay: 0.2s;
+        }
+
+        h2 {
+            font-size: 2rem;
+            animation-delay: 0.4s;
+        }
+
+        h3 {
+            font-size: 1.8rem;
+            animation-delay: 0.6s;
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin: 20px 0;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateX(-20px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+    <meta http-equiv="refresh" content="3;url=/login-cookie/" />
+</head>
+<body>
+    <div class="container">
+        <p>Kamaraj College of Engineering and Technology<p>
+        <p>Web Applications using Django Framework<p>
+       
+        
+        <h1>Welcome {{ username }},</h1>
+        <h1>Session created!!!!!</h1>
+        <p>You will be redirected to the login page for cookies shortly...</p>
+    </div>
+</body>
+</html>
